@@ -53,7 +53,7 @@ def main():
 
     old_ip = file_stuff("r")
     if old_ip != args.ip:
-        logging.info("ip address different, sending main and updating local file")
+        logging.info("ip address different, sending mail and updating local file")
         send_mail(args.ip)
         file_stuff("w")
 
